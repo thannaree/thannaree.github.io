@@ -1,0 +1,245 @@
+
+* {
+    font-family: "Georgia", sans-serif;
+    margin: 0;
+}
+
+* p {
+    line-height: 1.6;
+    padding: 5px;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #424242;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row::after, .row::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.padding {
+    padding: 5px 16px;
+}
+
+.column {
+    width: 25%;
+}
+
+.column .button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    font-size: large;
+    margin-right: 8px;
+    padding: 8px;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+#headline {
+    width: 65%;
+    height: auto;
+    padding-left: 10%;
+    text-align: center;
+    background-color: #4f4f4f;
+    color: white;
+}
+
+#headline p, h3, h4 {
+    padding: 5px;
+    margin: 16px;
+}
+
+#headline > p {
+    font-size: medium;
+}
+
+.top-section {
+    padding: 65px 5px 5px 5px;
+    background-color: #4f4f4f;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+.contact-info p::before {
+    content: "";
+    display: inline-block;
+    padding-right: 16px;
+}
+
+.contact-info p {
+    font-size: large;
+}
+
+.container {
+    padding: 16px 32px;
+}
+
+.summary {
+    margin: 25px 100px;
+    padding: 24px 64px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 gainsboro, 0 6px 20px 0 gainsboro;
+}
+
+.button-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 15px 0 5px 0;
+    align-items: center;
+    align-content: center;
+}
+
+.button-container button {
+    width: 150px;
+    height: 40px;
+    margin: 0 20px;
+    font-size: medium;
+    color: white;
+    background-color: #3f51b5;
+    box-shadow: 0 4px 6px 0 #757575, 0 4px 6px 0 #757575;
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+}
+
+.button-container button:hover {
+    color: white;
+    background-color: #4CAF50;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+p .icon::before {
+    color: white;
+}
+
+.about-icon::before {
+    content: "";
+    display: inline-block;
+    font-size: x-large;
+    margin-right: 16px;
+    vertical-align: middle;
+    background-image: url("image/IMG_0979-1.jpg");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.icon::before, .icon::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    font-size: x-large;
+    margin-right: 8px;
+}
+
+.icon-last {
+    margin-left: 16px;
+    font-size: x-large;
+    vertical-align: middle;
+}
+
+.top-item {
+    display: inline-block;
+    background-color: #4f4f4f;
+    padding: 10px;
+}
+
+img {
+    border-style: solid;
+    vertical-align: middle;
+}
+
+#profile-pic {
+    width: 35%;
+    padding-right: 50px;
+}
+
+.image-profile {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: auto;
+    border-radius: 70%;
+    border: 5px solid white;
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    width: 25%;
+    height: 28px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.button:hover {
+    color: white;
+    background-color: #3f51b5;
+    font-size: larger;
+}
+
+.button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .float-right-sm {
+        float: right;
+    }
+}
+@media (min-width: 769px) {
+    .float-right-lg {
+        float: right;
+    }
+}
+
+/*svg:not(:root) {
+    overflow: hidden;
+}*/
