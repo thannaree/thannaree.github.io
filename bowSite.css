@@ -13,8 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #424242;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .row::after, .row::before {
@@ -48,6 +47,8 @@
     width: 100%;
     z-index: 1;
     top: 0;
+    background-color: #424242;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #headline {
@@ -229,6 +230,7 @@ h1, h2, h3, h4 {
     user-select: none;
 }
 
+/*
 @media (max-width: 768px) {
     .float-right-sm {
         float: right;
@@ -239,6 +241,23 @@ h1, h2, h3, h4 {
         float: right;
     }
 }
+
+@media screen and (min-width: 601px) {
+    .small-screen-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top-nav a, button, .column {
+        display: none;
+    }
+    .small-screen-icon {
+        display: block;
+        float: left;
+    }
+}
+*/
 
 /*svg:not(:root) {
     overflow: hidden;
