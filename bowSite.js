@@ -18,3 +18,8 @@ function myFunction() {
         topNav.classList.remove("sticky");
     }
 }*/
+function getCopyrightYear() {
+    var theDate = new Date();
+    var theYear = theDate.getFullYear();
+    document.getElementById("year").innerHTML = theYear;
+}
