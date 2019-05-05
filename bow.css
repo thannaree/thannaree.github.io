@@ -10,3 +10,73 @@
     font-family: "Georgia", sans-serif;
 }
 
+.wrapper, .head-banner, .footer, .top-section, .container {
+    width: 100%;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.head-banner {
+    background-color: mediumpurple;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.head-banner p, span, .head-banner a {
+    padding: 12px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.image-profile {
+    width: 50%;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 5px solid white;
+    border-radius: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-item h4, .summary h3, .container h3 {
+    padding: 20px;
+    line-height: 34px;
+}
+
+.top-item p, .summary p, .container p {
+    font-size: 16px;
+    padding: 20px;
+    line-height: 24px;
+}
+
+.footer p {
+    padding: 10px 10px 5px;
+}
+.footer {
+    background-color: mediumpurple;
+    color: white;
+    font-size: 14px;
+}
+
+/*
+#profile-pic {
+    width: 35%;
+    padding-right: 50px;
+}
+
+.image-profile {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: auto;
+    border-radius: 70%;
+    border: 5px solid white;
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 0;
+}*/
