@@ -12,19 +12,26 @@
 
 .wrapper, .head-banner, .footer, .top-section, .container {
     width: 100%;
+    padding: 10px 12px;
 }
 
 .nav-bar {
     display: none;
 }
 
+.menu-icon {
+
+}
+
 .head-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: mediumpurple;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.head-banner p, span, .head-banner a {
-    padding: 12px;
+.head-banner span, .head-banner a {
     color: white;
 }
 
@@ -32,12 +39,16 @@ a {
     text-decoration: none;
 }
 
+.img-banner {
+    width: 100%;
+    height: auto;
+    opacity: 0.35;
+}
+
 .image-profile {
-    width: 50%;
-    align-items: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: 5px solid white;
+    width: 25%;
+    align-content: flex-start;
+    border: 3px solid white;
     border-radius: 70%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
