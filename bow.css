@@ -67,13 +67,13 @@ a {
 }
 
 aside {
-    width: 68%;
+    width: 73%;
     position: absolute;
-    top: 10%;
+    top: 0;
     right: 0;
-    line-height: 16px;
+    line-height: 20px;
     font-style: italic;
-    font-size: small;
+    font-size: inherit;
     color: #424242;
     /*box-shadow: inset 5px 0 5px -5px #424242;*/
     /*box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);*/
