@@ -259,6 +259,21 @@ h1, h2, h3, h4 {
 }
 */
 
-/*svg:not(:root) {
+/*
+.about-icon::before {
+    content: "";
+    display: inline-block;
+    font-size: x-large;
+    margin-right: 16px;
+    vertical-align: middle;
+    background-image: url("image/IMG_0979-1.jpg");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+svg:not(:root) {
     overflow: hidden;
 }*/
