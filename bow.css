@@ -53,10 +53,10 @@ a {
 .img-banner {
     width: 100%;
     height: auto;
-    opacity: 0.35;
+    opacity: 0.45;
 }
 
-.aside-text p {
+.aside-text {
     text-align: center;
     vertical-align: middle;
     line-height: 20px;
@@ -82,7 +82,7 @@ a {
     width: 20%;
     position: absolute;
     top: 19%;
-    left: 4%;
+    right: 5%;
     border: 3px solid white;
     border-radius: 70%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -129,6 +129,26 @@ a {
     line-height: 24px;
 }
 
+.toTop {
+    position: fixed;
+    bottom: 55px;
+    right: 14px;
+    z-index: 99;
+    color: white;
+    background-color: #673ab7;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    font-size: large;
+}
+
+.arrow {
+    color: white;
+    font-size: x-large;
+}
+
 .footer p {
     padding: 10px 10px 5px;
 }
@@ -167,17 +187,6 @@ a {
     margin-bottom: 0;
 }*/
 
-
-/*@media (min-width: 320px) and (max-width: 480px) {*/
-    /*.img-banner {*/
-        /*display: none;*/
-    /*}*/
-    /*.section {*/
-        /*margin-top: 12%;*/
-    /*}*/
-
-
-/*}*/
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
@@ -189,6 +198,25 @@ a {
 }
 
 /*
+  ##Device = Most of the small screen laptops
+  ##Screen = B/w 991px to 1280px
+*/
+@media (min-width: 991px) and (max-width: 1280px) {
+    .banner {
+        margin-top: 3.5%;
+    }
+    .aside-text {
+        width: 63%;
+        font-size: 45px;
+        line-height: 65px;
+        transform: translate(-70%, -45%);
+    }
+    .img-profile {
+        right: 7%;
+    }
+}
+
+/*
   ##Device = Most of the Smart phones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
@@ -196,20 +224,27 @@ a {
 
 }
 
+/*
+  ##Device = Most of the laptops and large screen devices
+  ##Screen = larger than 1281 pixels
+*/
 @media (min-width: 1281px) {
     .menu-icon {
         display: none;
     }
+
     .banner {
         margin-top: 3.7%;
     }
-    aside {
-        font-size: xx-large;
-        top: 25%;
-        line-height: 48px;
+    .aside-text {
+        width: 60%;
+        font-size: 45px;
+        line-height: 65px;
+        transform: translate(-68%, -45%);
     }
     .img-profile {
         top: 25%;
+        right: 10%;
         width: 16%;
     }
     .head-text {
@@ -221,10 +256,6 @@ a {
         flex-direction: row;
         justify-content: space-around;
     }
-    /*.nav-bar a:hover {*/
-        /*color: #673ab7;*/
-        /*background-color: white;*/
-    /*}*/
     .icon::before, .icon::after {
         content: "";
         padding: 0 5px;
@@ -232,21 +263,21 @@ a {
     .column {
         width: 25%;
     }
-    /*.button {*/
-        /*border: none;*/
-        /*display: block;*/
-        /*padding: 8px 16px;*/
-        /*width: 25%;*/
-        /*height: 28px;*/
-        /*vertical-align: middle;*/
-        /*overflow: hidden;*/
-        /*text-decoration: none;*/
-        /*color: inherit;*/
-        /*background-color: inherit;*/
-        /*text-align: center;*/
-        /*cursor: pointer;*/
-        /*white-space: nowrap;*/
-    /*}*/
+    .button {
+        border: none;
+        display: block;
+        padding: 8px 16px;
+        width: 25%;
+        height: 28px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+    }
     .column {
         border: none;
         /*padding: 0;*/
@@ -261,5 +292,9 @@ a {
     a:hover {
         color: darkgrey;
     }
+    .banner {
+        margin-top: 3.5%;
+    }
 }
+
 
