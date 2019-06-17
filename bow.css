@@ -188,47 +188,51 @@ a {
 }*/
 
 /*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-@media (min-width: 481px) and (max-width: 767px) {
-
-
+     ##Device = Most of the Smart phones Mobiles (Portrait)
+     ##Screen = B/w 320px to 479px
+   */
+@media (min-width: 320px) and (max-width: 480px) {
 
 }
 
-/*
-  ##Device = Most of the small screen laptops
-  ##Screen = B/w 991px to 1280px
-*/
-@media (min-width: 991px) and (max-width: 1280px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     .banner {
-        margin-top: 3.5%;
+            margin-top: 3.5%;
     }
+
     .aside-text {
         width: 63%;
         font-size: 45px;
         line-height: 65px;
         transform: translate(-70%, -45%);
     }
+
     .img-profile {
         right: 7%;
     }
 }
 
-/*
-  ##Device = Most of the Smart phones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-@media (min-width: 320px) and (max-width: 480px) {
 
-}
 
-/*
-  ##Device = Most of the laptops and large screen devices
-  ##Screen = larger than 1281 pixels
-*/
-@media (min-width: 1281px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
     .menu-icon {
         display: none;
     }
@@ -236,33 +240,40 @@ a {
     .banner {
         margin-top: 3.7%;
     }
+
     .aside-text {
         width: 60%;
         font-size: 45px;
         line-height: 65px;
         transform: translate(-68%, -45%);
     }
+
     .img-profile {
         top: 25%;
         right: 10%;
         width: 16%;
     }
+
     .head-text {
         display: none;
     }
+
     .nav-bar {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
     .icon::before, .icon::after {
         content: "";
         padding: 0 5px;
     }
+
     .column {
         width: 25%;
     }
+
     .button {
         border: none;
         display: block;
@@ -278,6 +289,7 @@ a {
         cursor: pointer;
         white-space: nowrap;
     }
+
     .column {
         border: none;
         /*padding: 0;*/
@@ -289,12 +301,15 @@ a {
         font-size: large;
         /*margin: 0;*/
     }
+
     a:hover {
         color: darkgrey;
     }
+
     .banner {
         margin-top: 3.5%;
     }
 }
+
 
 
