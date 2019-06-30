@@ -1,3 +1,7 @@
+<!-- An HTML file to use as a home page on my website -->
+<!-- Author: Thannaree Charoenpokkasap -->
+<!-- Website: bow.meys.tel, thannaree.github.io, bow.meystel.com -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,6 +11,7 @@
         <meta name="keywords" content="Bow, Meystel, web design, photography, Thannaree, Charoenpokkasap">
         <meta name="description" content="Bow Meystel's Personal Website">
         <link rel="stylesheet" href="bow.css">
+        <link rel="stylesheet" href="mediaQuery.css">
         <link rel="stylesheet" href="css/all.css">
         <link rel="icon" href="image/logo.png" type="image/gif" sizes="16x16">
         <!--<link rel="stylesheet" type="text/css" href="w3.css">-->
@@ -15,21 +20,23 @@
 
     <body>
         <div class="head-banner">
-            <div class="menu-icon header"><a href="index.html"><i class="fab fa-fort-awesome"></i></a></div>
-            <div class="head-text header">Me Myself && Thannaree</div>
+            <div class="menu-icon header"><a href="index.html">
+                <i class="fas fa-home"></i> Me Myself && Thannaree</a></div>
+<!--            <div class="head-text header">Me Myself && Thannaree</div>-->
 
-            <nav class="nav-bar">
+            <nav class="nav-bar" id="side-nav">
                 <!-- A navigation tab for the "About Me" section -->
                 <a href="#about" class="about-icon button column">ABOUT</a>
                 <!-- A navigation tab for the "Experience" section -->
-                <a href="#experience" class="button column"><i class="fas fa-business-time icon"></i>RESUME</a>
+                <a href="#experience" class="button column"><i class="fas fa-business-time icon"></i>WEB DESIGN</a>
                 <!-- A navigation tab for the "Skills" section  -->
-                <a href="#skills" class="button column"><i class="fas fa-laptop-code icon"></i>SKILLS</a>
+                <a href="#skills" class="button column"><i class="fas fa-laptop-code icon"></i>PHOTOGRAPHY</a>
                 <!-- A navigation tab for the "Education" section -->
-                <a href="#education" class="button column"><i class="fas fa-graduation-cap icon"></i>EDUCATION</a>
+                <a href="#education" class="button column"><i class="fas fa-graduation-cap icon"></i>CONTACT</a>
             </nav> <!-- End of the "top" class <div> tag  for the navigation bar -->
 
-            <div class="menu-icon header"><i class="fas fa-bars"></i></div>
+            <a href="javascript:void(0);" class="menu-icon header" onclick="mobileNav()"><i class="fas fa-bars"></i></a>
+<!--            <div class="menu-icon header"><i class="fas fa-bars"></i></div>-->
         </div>
 
         <div class="banner" id="top">
@@ -116,20 +123,20 @@
             </div>
             <button class="toTop"><a href="#top"><i class="fas fa-arrow-alt-circle-up arrow"></i></a></button>
         </div> <!-- End wrapper class div -->
-    <footer>
-        <div class="footer">
-            <p><i class="far fa-copyright"></i>
-                <script type="text/JavaScript">
-                    document.write(new Date().getFullYear());
-                </script>
-                Thannaree Charoenpokkasap
-            </p>
-            <p class="footer-icon">
-                <i class="fab fa-linkedin icon"><a href="https://www.linkedin.com/in/thannaree/"></a></i>
-                <i class="fas fa-globe icon"><a href="http://bow.meys.tel"></a></i>
-            </p>
-        </div>
-    </footer>
+        <footer>
+            <div class="footer">
+                <p><i class="far fa-copyright"></i>
+                    <script type="text/JavaScript">
+                        document.write(new Date().getFullYear());
+                    </script>
+                    Thannaree Charoenpokkasap
+                </p>
+                <p class="footer-icon">
+                    <i class="fab fa-linkedin icon"><a href="https://www.linkedin.com/in/thannaree/"></a></i>
+                    <i class="fas fa-globe icon"><a href="http://bow.meys.tel"></a></i>
+                </p>
+            </div>
+        </footer>
 
 <!-- ICONS
 <i class="fab fa-facebook-square"></i>
