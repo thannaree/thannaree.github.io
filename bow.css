@@ -25,15 +25,14 @@
     overflow: hidden;
     right: 0;
     display: none;
-    position: fixed !important;
+    position: fixed;
     background-color: black;
-    color: white;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
     width: auto;
     height: auto;
     margin-top: 9%;
     padding: 12px 10px;
-    z-index: 98;
+    z-index: 99;
     line-height: 25px;
 }
 
@@ -41,6 +40,7 @@
     display: block;
     font-size: small;
     text-align: right;
+    color: white;
 }
 
 #side-nav .icon {
