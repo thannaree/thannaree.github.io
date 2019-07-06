@@ -24,7 +24,8 @@
                 <i class="fas fa-home"></i> Me Myself && Thannaree</a></div>
 <!--            <div class="head-text header">Me Myself && Thannaree</div>-->
 
-            <nav class="nav-bar" id="side-nav">
+            <!-- A full navigation menu for large screen devices -->
+            <nav class="nav-bar">
                 <!-- A navigation tab for the "About Me" section -->
                 <a href="#about" class="about-icon button column"><i class="fas fa-user-circle icon"></i>ABOUT</a>
                 <!-- A navigation tab for the "Experience" section -->
@@ -35,8 +36,25 @@
                 <a href="#education" class="button column"><i class="fas fa-address-card icon"></i>CONTACT</a>
             </nav> <!-- End of the "top" class <div> tag  for the navigation bar -->
 
-            <a href="javascript:void(0);" class="menu-icon header" onclick="mobileNav()"><i class="fas fa-bars"></i></a>
+            <a href="javascript:void(0);" class="menu-icon header" onclick="mobileNav()">
+                <i class="fas fa-bars"></i></a>
 <!--            <div class="menu-icon header"><i class="fas fa-bars"></i></div>-->
+
+        <div class="mobile-menu" id="side-nav">
+            <!-- A navigation tab for the "About Me" section -->
+            <a href="#about" class="about-icon button column" onclick="closeMobileNav()">
+                <i class="fas fa-user-circle icon"></i>ABOUT</a>
+            <!-- A navigation tab for the "Experience" section -->
+            <a href="#experience" class="button column" onclick="closeMobileNav()">
+                <i class="fas fa-laptop-code icon"></i>WEB DESIGN</a>
+            <!-- A navigation tab for the "Skills" section  -->
+            <a href="#skills" class="button column" onclick="closeMobileNav()">
+                <i class="fas fa-camera icon"></i>PHOTOGRAPHY</a>
+            <!-- A navigation tab for the "Education" section -->
+            <a href="#education" class="button column" onclick="closeMobileNav()">
+                <i class="fas fa-address-card icon"></i>CONTACT</a>
+        </div>
+
         </div>
 
         <div class="banner" id="top">

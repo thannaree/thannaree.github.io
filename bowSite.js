@@ -3,9 +3,12 @@
    !* Website: bow.meys.tel, thannaree.github.io, bow.meystel.com
 */
 
-// A function for typing effect
+// A function to switch between full navigation bar (large screen devices) and
+// mobile navigation (small screen devices) by clicking the hamburger icon
+
+var theLink = document.getElementById("side-nav");
+
 function mobileNav() {
-    let theLink = document.getElementById("side-nav");
 
     if (theLink.style.display === "block") {
         theLink.style.display = "none";
@@ -14,6 +17,18 @@ function mobileNav() {
         theLink.style.display = "block";
     }
 }
+
+function showMobileNav() {
+    theLink.style.display = "block";
+}
+
+// A function for mobile navigation -- when click or touch the one of the mobile link,
+// the navigation menu will be hidden
+
+function closeMobileNav() {
+    theLink.style.display = "none";
+}
+
 
 /*
 // When the user scrolls the page, execute myFunction
