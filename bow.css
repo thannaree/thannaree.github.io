@@ -71,25 +71,33 @@ a {
     padding: 0 3px;
 }
 
-.header {
-    width: 90%;
+.header-home {
+    width: 93%;
+    /*border: red 1px solid;*/
 }
 
-.header a {
+.header-bar {
+    width: 7%;
+    /*border: white 1px solid;*/
+}
+
+.header-home a {
     color: white;
     /*padding-left: 3%;*/
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     vertical-align: middle;
 }
 
 .home-icon {
-    padding-right: 3%;
-    color: white;
+    padding-right: 2%;
+    padding-left: 2%;
+    /*color: white;*/
 }
 
 .bar-icon {
+    padding-right: 2%;
     font-size: 14px;
     vertical-align: middle;
     color: white;
