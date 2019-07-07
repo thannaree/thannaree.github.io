@@ -51,20 +51,19 @@ a {
     height: auto;
     right: 0;
     /*margin-top: 3%;*/
-    padding: 6% 3% 2% 5%;
+    padding: 8% 6% 2% 5%;
     z-index: 1;
     line-height: 25px;
 }
 
-#side-nav a {
-    display: block;
-    font-size: small;
-    text-align: right;
+#side-nav a, #side-nav .icon {
     color: white;
 }
 
-#side-nav .icon {
-    color: white;
+#side-nav a {
+    display: block;
+    font-size: 11px;
+    text-align: right;
 }
 
 #side-nav .icon::after {
@@ -72,19 +71,17 @@ a {
     padding: 0 3px;
 }
 
-#side-nav a:hover {
-    color: #673ab7;
-}
-
 .header {
-    width: 75%;
+    width: 90%;
 }
 
 .header a {
     color: white;
     /*padding-left: 3%;*/
-    font-size: larger;
+    font-size: 14px;
+    font-weight: bold;
     letter-spacing: 4px;
+    vertical-align: middle;
 }
 
 .home-icon {
@@ -93,10 +90,7 @@ a {
 }
 
 .bar-icon {
-    /*display: inline-block;*/
-    /*position: absolute;*/
-    right: 5%;
-    font-size: larger;
+    font-size: 14px;
     vertical-align: middle;
     color: white;
 }
@@ -109,26 +103,36 @@ a {
 .img-banner {
     width: 100%;
     height: auto;
-    /*opacity: 100%;*/
 }
 
 .aside-text {
-    text-align: center;
-    vertical-align: middle;
-    line-height: 20px;
-    font-style: italic;
-    font-size: inherit;
-    color: #424242;
-}
-
-.aside-text {
+    /*background-color: #673ab7;*/
     position: absolute;
-    vertical-align: middle;
-    width: 70%;
+    width: 40%;
     height: auto;
-    top: 46%;
-    left: 27%;
-    transform: translate(-32%, -50%);
+    top: 20%;
+    left: 60%;
+    right: 0;
+    border-radius: 7%;
+    /*transform: translate(-32%, -50%);*/
+    padding-right: 4%;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 25px;
+    /*font-style: italic;*/
+    font-weight: bold;
+    font-size: 14px;
+    color: snow;
+}
+
+#iam {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aside-text {
+    /*vertical-align: middle;*/
     /*border: 5px solid red;*/
     /*box-shadow: inset 5px 0 5px -5px #424242;*/
     /*box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);*/
