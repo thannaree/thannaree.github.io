@@ -10,6 +10,7 @@
         <meta name="author" content="Thannaree Charoenpokkasap">
         <meta name="keywords" content="Bow, Meystel, web design, photography, Thannaree, Charoenpokkasap">
         <meta name="description" content="Bow Meystel's Personal Website">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap">
         <link rel="stylesheet" href="bow.css">
         <link rel="stylesheet" href="mediaQuery.css">
         <link rel="stylesheet" href="css/all.css">
@@ -20,14 +21,15 @@
 
     <body>
         <div class="head-banner">
-            <div class="menu-icon header"><a href="index.html">
-                <i class="fas fa-home"></i> Me Myself && Thannaree</a></div>
+<!--        Header class is the home icon and the "me" text. The icon and the text are also a link to index.html -->
+            <div class="header"><a href="index.html">
+                <i class="fas fa-home home-icon"></i>Me Myself && Thannaree</a></div>
 <!--            <div class="head-text header">Me Myself && Thannaree</div>-->
 
-            <!-- A full navigation menu for large screen devices -->
+<!--        A full navigation menu for large screen devices -->
             <div class="nav-bar">
                 <!-- A navigation tab for the "About Me" section -->
-                <a href="#about" class="about-icon button column"><i class="fas fa-user-circle icon"></i>ABOUT</a>
+                <a href="#about" class="button column"><i class="fas fa-user-circle icon"></i>ABOUT</a>
                 <!-- A navigation tab for the "Experience" section -->
                 <a href="#experience" class="button column"><i class="fas fa-laptop-code icon"></i>WEB DESIGN</a>
                 <!-- A navigation tab for the "Skills" section  -->
@@ -36,10 +38,13 @@
                 <a href="#education" class="button column"><i class="fas fa-address-card icon"></i>CONTACT</a>
             </div> <!-- End of the "top" class <div> tag  for the navigation bar -->
 
-            <a href="javascript:void(0);" class="menu-icon header" onclick="mobileNav()">
-                <i class="fas fa-bars"></i></a>
-<!--            <div class="menu-icon header"><i class="fas fa-bars"></i></div>-->
-        </div>
+<!--        A div that contains the hamburger icon on the right hand side. When click, mobile menu will shown, and
+            when click again, the mobile menu will be disappear-->
+            <div>
+                <a href="javascript:void(0);" class="header" onclick="mobileNav()">
+                <i class="fas fa-bars bar-icon"></i></a>
+            </div>
+        </div> <!-- End of the "head-banner" div -->
 
         <div class="mobile-menu" id="side-nav">
             <!-- A navigation tab for the "About Me" section -->
@@ -57,16 +62,14 @@
         </div>
 
         <div class="banner" id="top">
-            <img class="img-banner" src="image/banner.jpg" alt="image banner, a squirrel in DC">
-
+            <img class="img-banner" src="aCopy4webPortfolio/DSC00447.JPG" alt="image banner, Bow with a camera">
                 <aside class="aside-text">
                     Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
                     altera fabulas ut quo.
                 </aside>
-
-            <div class="profile-pic">
+            <!--<div class="profile-pic">
                 <img class="img-profile" src="image/IMG_0979-1.jpg" alt="Bow Profile Picture" content="Bow's smiling">
-            </div>
+            </div>-->
         </div>
 
         <div class="wrapper">

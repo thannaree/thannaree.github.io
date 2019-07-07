@@ -3,18 +3,38 @@
    !* Website: bow.meys.tel, thannaree.github.io, bow.meystel.com
 */
 
-/* The default CSS is for mobile devices -- iPhone with large screen specifically */
+/* The default CSS is for mobile devices (for iPhone with large screen, specifically) */
 
 * {
-    font-family: "Georgia", sans-serif;
+    /*font-family: "Georgia", sans-serif;*/
+    font-family: 'Libre Baskerville', serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.wrapper, .head-banner, .footer, .top-section, .container {
+.wrapper, .footer, .top-section, .container {
     width: 100%;
     padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head-banner {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*height: 6%;*/
+    padding: 3%;
+    z-index: 2;
+    background-color: #673ab7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav-bar {
@@ -23,16 +43,16 @@
 
 #side-nav {
     overflow: hidden;
-    right: 0;
     display: none;
     position: fixed;
     background-color: black;
-    /*opacity: 0.8;*/
+    opacity: 0.8;
     width: auto;
     height: auto;
-    margin-top: 9%;
-    padding: 12px 10px;
-    z-index: 99;
+    right: 0;
+    /*margin-top: 3%;*/
+    padding: 6% 3% 2% 5%;
+    z-index: 1;
     line-height: 25px;
 }
 
@@ -52,51 +72,44 @@
     padding: 0 3px;
 }
 
-/*#side-nav a:hover {
+#side-nav a:hover {
     color: #673ab7;
-}*/
-
-/*#side-nav i {
-    display: none;
-}*/
-
-.head-banner {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    vertical-align: middle;
-    background-color: #673ab7;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.head-banner div, .head-banner a {
+.header {
+    width: 75%;
+}
+
+.header a {
     color: white;
-    margin: 2px 5px;
-    font-size: large;
+    /*padding-left: 3%;*/
+    font-size: larger;
+    letter-spacing: 4px;
 }
 
-.menu-icon {
-
+.home-icon {
+    padding-right: 3%;
+    color: white;
 }
 
-a {
-    text-decoration: none;
+.bar-icon {
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    right: 5%;
+    font-size: larger;
+    vertical-align: middle;
+    color: white;
 }
 
 .banner {
-    margin-top: 12%;
+    margin-top: 5%;
     position: relative;
 }
 
 .img-banner {
     width: 100%;
     height: auto;
-    opacity: 0.45;
+    /*opacity: 100%;*/
 }
 
 .aside-text {
