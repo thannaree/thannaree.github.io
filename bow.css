@@ -72,12 +72,13 @@ a {
 }
 
 .header-home {
-    width: 93%;
+    width: 94%;
     /*border: red 1px solid;*/
 }
 
 .header-bar {
-    width: 7%;
+    width: 6%;
+    right: 0;
     /*border: white 1px solid;*/
 }
 
@@ -91,7 +92,7 @@ a {
 }
 
 .home-icon {
-    padding-right: 2%;
+    padding-right: 1%;
     padding-left: 2%;
     /*color: white;*/
 }
