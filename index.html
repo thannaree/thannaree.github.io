@@ -42,8 +42,7 @@
 <!--        A div that contains the hamburger icon on the right hand side. When click, mobile menu will shown, and
             when click again, the mobile menu will be disappear-->
             <div class="header-bar">
-                <a href="javascript:void(0);" onclick="mobileNav()">
-                <i class="fas fa-bars bar-icon"></i></a>
+                <a href="javascript:void(0);" id="toggle-icon" onclick="mobileNav()"><span></span></a>
             </div>
         </div> <!-- End of the "head-banner" div -->
 
@@ -68,9 +67,9 @@
                     <span id="iam">I AM</span> <br> Many Things <br>A Web Designer <br>A Developer
                     <br>A Photographer <br>A Traveler <br>And Much More!
                 </aside>
-            <div class="resume-button">
-                <button>VIEW RESUME</button>
-            </div>
+                <a href="charoenpokkasapt_resume.pdf" target="_blank">
+                    <button class="view-resume">View Resume</button>
+                </a>
             <!--<div class="profile-pic">
                 <img class="img-profile" src="image/IMG_0979-1.jpg" alt="Bow Profile Picture" content="Bow's smiling">
             </div>-->
@@ -188,6 +187,7 @@
 <i class="fas fa-award"></i>
 <i class="far fa-copyright"></i>
 <i class="fas fa-desktop"></i>
+<i class="fas fa-times"></i>
    <img src="image/IMG_1897.JPG" alt="Bow's Profile Picture" content="Bow with the little Alexander">-->
         <script src="bowSite.js"></script>
     </body>
