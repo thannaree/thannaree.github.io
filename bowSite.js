@@ -6,30 +6,34 @@
 // A function to switch between full navigation bar (large screen devices) and
 // mobile navigation (small screen devices) by clicking the hamburger icon
 
-var theLink = document.getElementById("side-nav");
-// var changeIcon = document.getElementById("bar-icon");
-
-function mobileNav() {
-
-    if (theLink.style.display === "block") {
-        theLink.style.display = "none";
-    }
-    else {
-        theLink.style.display = "block";
-        // changeIcon.classList.toggle("fas fa-times");
-    }
-}
+var mobileNav = document.getElementById("mobile-nav");
+var overlay = document.getElementById("overlay");
+var hamburger = document.getElementById("bar-icon");
+// var theIcon = document.getElementById("bar-icon").hasAttribute("class");
 
 // A function for mobile navigation -- when click or touch the one of the mobile link,
 // the navigation menu will be hidden
 function closeMobileNav() {
-    theLink.style.display = "none";
+    mobileNav.style.display = "none";
+    overlay.style.display = "none";
 }
 
+// To display the mobile navigation when a user click/touch the hamburger bar
+function openMobileNav() {
+    mobileNav.style.display = "block";
+    overlay.style.display = "block";
+}
 
-document.querySelector("#toggle-icon").addEventListener("click", function () {
-   this.classList.toggle("active");
-});
+/*function toggleMobileNav() {
+    if (theIcon.hasAttribute("class")) {
+        theIcon.setAttribute("class", "fas fa-times");
+    }
+}*/
+
+
+// document.querySelector("#toggle-icon").addEventListener("click", function () {
+//    this.classList.toggle("active");
+// });
 
 /*
 function toggleIcon(theIcon) {

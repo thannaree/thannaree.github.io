@@ -1,0 +1,238 @@
+<!-- An HTML file to use as a home page on my website -->
+<!-- Author: Thannaree Charoenpokkasap -->
+<!-- Website: bow.meys.tel, thannaree.github.io, bow.meystel.com -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="author" content="Thannaree Charoenpokkasap">
+    <meta name="keywords" content="Bow, Meystel, web design, photography, Thannaree, Charoenpokkasap">
+    <meta name="description" content="Bow Meystel's Personal Website">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap">
+    <link rel="stylesheet" href="css/w3-v414">
+    <link rel="stylesheet" href="css/bow.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" href="image/logo.png" type="image/gif" sizes="24x24">
+    <!--<link rel="stylesheet" type="text/css" href="w3.css">-->
+    <title>Welcome | Bow Meystel</title>
+  </head>
+
+  <body>
+    <header class="head-banner">
+<!-- Header class is the home icon and the "me" text. The icon and the text are also a link to index.html -->
+      <div>
+        <a href="#home"><i class="fas fa-home home-icon"></i>
+          <span>Me Myself && Thannaree</<span>
+        </a>
+      </div>
+      <div>
+        <a href="javascript:void(0)" onclick="openMobileNav()"
+          class="bc-button bc-hide-large bc-display-topright">
+          <i class="fas fa-bars icon" id="bar-icon"></i>
+        </a>
+      </div>
+
+      <!-- A full navigation menu for large screen devices -->
+      <!-- <div class="nav-bar">
+          <a href="#about" class="button column"><i class="fas fa-user-circle icon"></i>ABOUT</a>
+          <a href="#experience" class="button column"><i class="fas fa-laptop-code icon"></i>WEB DESIGN</a>
+          <a href="#skills" class="button column"><i class="fas fa-camera icon"></i>PHOTOGRAPHY</a>
+          <a href="#education" class="button column"><i class="fas fa-address-card icon"></i>CONTACT</a>
+      </div>  -->
+      <!-- End of the "top" class <div> tag  for the navigation bar -->
+
+      <!-- A div that contains the hamburger icon on the right hand side. When click, mobile menu will shown, and
+          when click again, the mobile menu will be disappear-->
+      <!-- <div class="header-bar">
+        <a href="javascript:void(0);" id="toggle-icon" onclick="mobileNav()"><span></span></a>
+      </div> -->
+
+      <!-- <div class="header-bar">
+        <i class="fas fa-bars icon" id="bar-icon"></i> -->
+
+        <!-- <a href="javascript:void(0);" onclick="openMobileNav()">
+            <i class="fas fa-bars" id="bar-icon"></i></a> -->
+            <!-- </div> -->
+
+    </header><!-- End of the "head-banner" div -->
+
+    <nav class="bc-sidebar" id="side-nav">
+      <a href="javascript:void(0)" onclick="openMobileNav()"
+        class="bc-button bc-hide-large bc-display-topright">
+        <i class="fas fa-bars icon" id="bar-icon"></i>
+      </a>
+
+        <!-- A navigation tab for the "About Me" section -->
+        <a href="#about" class="button column" onclick="closeMobileNav()">
+            <i class="fas fa-user-circle icon"></i>About</a>
+        <!-- A navigation tab for the "Experience" section -->
+        <a href="#experience" class="button column" onclick="closeMobileNav()">
+            <i class="fas fa-laptop-code icon"></i>Web Design</a>
+        <!-- A navigation tab for the "Skills" section  -->
+        <a href="#skills" class="button column" onclick="closeMobileNav()">
+            <i class="fas fa-camera icon"></i>Photography</a>
+        <!-- A navigation tab for the "Education" section -->
+        <a href="#education" class="button column" onclick="closeMobileNav()">
+            <i class="fas fa-address-card icon"></i>Contact</a>
+    </nav>
+
+        <div class="banner" id="top">
+            <img class="img-banner" src="aCopy4webPortfolio/DSC00447.JPG" alt="image banner, Bow with a camera">
+                <aside class="aside-text">
+                    <span id="iam">I AM</span> <br> Many Things <br>A Web Designer <br>A Developer
+                    <br>A Photographer <br>A Traveler <br>And Much More!
+                </aside>
+                <a href="charoenpokkasapt_resume.pdf" target="_blank">
+                    <button class="view-resume">View Resume</button>
+                </a>
+            <!--<div class="profile-pic">
+                <img class="img-profile" src="image/IMG_0979-1.jpg" alt="Bow Profile Picture" content="Bow's smiling">
+            </div>-->
+        </div>
+
+        <div class="wrapper">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                    altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                    Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                </p>
+            </div>
+
+            <div class="summary" id="about">
+                <h3>Resume Summary</h3>
+                <p>My resume summary will go here.</p>
+                <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                    altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                    Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                </p>
+                <div class="resume-button">
+                    <button>VIEW PDF</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="container" id="experience">
+                    <h3>Experience Section</h3>
+                    <p>I'm so sleepy right now. I'll go to sleep soon.</p>
+                </div>
+
+                <div class="container" id="skills">
+                    <h3>Skills Section</h3>
+                    <p>I'm so sleepy right now. I'll go to sleep soon.</p>
+                </div>
+
+                <div class="container" id="education">
+                    <h3>Education Section</h3>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
+                        maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te,
+                        id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur
+                        his ad. Eum no molestiae voluptatibus.
+                    </p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
+                        maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te,
+                        id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur
+                        his ad. Eum no molestiae voluptatibus.
+                    </p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
+                        maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te,
+                        id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur
+                        his ad. Eum no molestiae voluptatibus.
+                    </p>
+                </div>
+            </div>
+            <!-- <button class="toTop"><a href="#top"><i class="fas fa-arrow-alt-circle-up arrow"></i></a></button> -->
+        </div> <!-- End wrapper class div -->
+        <footer>
+            <div class="footer">
+                <p><i class="far fa-copyright"></i>
+                    <script type="text/JavaScript">
+                        document.write(new Date().getFullYear());
+                    </script>
+                    Thannaree Charoenpokkasap. <br>All Rights Reserved.
+                </p>
+                <p class="footer-icon">
+                    <i class="fab fa-linkedin icon"><a href="https://www.linkedin.com/in/thannaree/"></a></i>
+                    <i class="fab fa-facebook-square icon"><a href="https://www.facebook.com/bojunga"></a></i>
+                    <a href="<a href="mailto:bobojunga@gmail.com?subject=Feedback"></a><i class="fas fa-paper-plane icon"></i>
+                </p>
+            </div>
+        </footer>
+
+<!-- ICONS
+<i class="fab fa-facebook-square"></i>
+<i class="fas fa-graduation-cap"></i>
+<i class="fas fa-bars"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fas fa-paper-plane"></i>
+<i class="fas fa-envelope"></i>
+<i class="fas fa-phone-square"></i>
+<i class="fas fa-chart-bar"></i>
+<i class="fas fa-address-card"></i>
+<i class="fas fa-briefcase"></i>
+<i class="fas fa-language"></i>
+<i class="fas fa-globe"></i>
+<i class="fas fa-igloo"></i>
+<i class="fas fa-home"></i>
+<i class="fab fa-css3-alt"></i>
+<i class="fab fa-fort-awesome"></i>
+<i class="fab fa-angular"></i>
+<i class="fab fa-github-alt"></i>
+<i class="fab fa-git-square"></i>
+<i class="fas fa-university"></i>
+<i class="far fa-copyright"></i>
+<i class="fab fa-html5"></i>
+<i class="fas fa-code"></i>
+<i class="fab fa-java"></i>
+<i class="fab fa-js"></i>
+<i class="fab fa-python"></i>
+<i class="fas fa-tools"></i>
+<i class="fas fa-database"></i>
+<i class="fas fa-map-marker-alt"></i>
+<i class="fas fa-map-marked-alt"></i>
+<i class="fas fa-award"></i>
+<i class="far fa-copyright"></i>
+<i class="fas fa-desktop"></i>
+<i class="fas fa-times"></i>
+   <img src="image/IMG_1897.JPG" alt="Bow's Profile Picture" content="Bow with the little Alexander">-->
+        <script src="bowSite.js"></script>
+    </body>
+</html>
+
+<!--<div class="column">-->
+<!--&lt;!&ndash; A navigation tab for the "About Me" section &ndash;&gt;-->
+<!--<a href="#about" class="about-icon button">ABOUT ME</a>-->
+<!--</div>-->
+<!--<div class="column">-->
+<!--&lt;!&ndash; A navigation tab for the "Experience" section &ndash;&gt;-->
+<!--<a href="#experience" class="button">-->
+<!--<i class="fas fa-business-time icon"></i>EXPERIENCE</a>-->
+<!--</div>-->
+<!--<div class="column">-->
+<!--&lt;!&ndash; A navigation tab for the "Skills" section  &ndash;&gt;-->
+<!--<a href="#skills" class="button"><i class="fas fa-laptop-code icon"></i>SKILLS</a>-->
+<!--</div>-->
+<!--<div class="column">-->
+<!--&lt;!&ndash; A navigation tab for the "Education" section &ndash;&gt;-->
+<!--<a href="#education" class="button">-->
+<!--<i class="fas fa-graduation-cap icon"></i>EDUCATION</a>-->
+<!--</div>-->
+
+<!--<p><i class="fas fa-code icon"></i> Software Developer-->
+<!--<i class="fas fa-code icon-last"></i>-->
+<!--</p>-->
+<!--<div class="contact-info">
+    <p>
+        <i class="fas fa-paper-plane icon"></i>
+        <i class="fas fa-phone-square icon"></i>
+        <i class="fas fa-map-marker-alt icon"></i>
+        <i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/thannaree/"></a>
+    </p>
+</div>-->
+
+<!--<div class="img-aside">-->
+<!--<img class="img-profile" src="image/IMG_0979-1.jpg" alt="Bow Profile Picture" content="Bow's smiling">-->
+<!--</div>-->
