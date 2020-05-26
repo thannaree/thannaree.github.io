@@ -24,6 +24,7 @@ function closeMobileNav() {
 function openMobileNav() {
     mobileNav.style.display = "block";
     overlay.style.display = "block";
+    goToTopButton.style.display = "none";
 }
 
 window.onscroll = function() {
@@ -32,7 +33,7 @@ window.onscroll = function() {
 
 // A function to display the "goToTopButton" when a user scroll down more than 20px
 function displayGoToTopButton() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     goToTopButton.style.display = "block";
   }
   else {

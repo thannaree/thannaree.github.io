@@ -49,7 +49,7 @@ a {
 #mobile-nav {
   z-index: 3;
   width: 100%;
-  height: 87%;
+  height: 100%;
   opacity: 90%;
   top: 0;
 }
@@ -57,11 +57,11 @@ a {
 #goToTop {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   z-index: 99;
   color: indigo;
-  opacity: 90%;
+  /* opacity: 90%; */
   border: none;
 }
 
