@@ -62,7 +62,7 @@ a {
   z-index: 99;
   color: indigo;
   opacity: 90%;
-  /* border: none; */
+  border: none;
 }
 
 hr {
