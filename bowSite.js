@@ -9,6 +9,8 @@
 var mobileNav = document.getElementById("mobile-nav");
 var overlay = document.getElementById("overlay");
 var hamburger = document.getElementById("bar-icon");
+var goToTopButton = document.getElementById("goToTop");
+
 // var theIcon = document.getElementById("bar-icon").hasAttribute("class");
 
 // A function for mobile navigation -- when click or touch the one of the mobile link,
@@ -22,6 +24,26 @@ function closeMobileNav() {
 function openMobileNav() {
     mobileNav.style.display = "block";
     overlay.style.display = "block";
+}
+
+window.onscroll = function() {
+  displayGoToTopButton()
+};
+
+// A function to display the "goToTopButton" when a user scroll down more than 20px
+function displayGoToTopButton() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    goToTopButton.style.display = "block";
+  }
+  else {
+    goToTopButton.style.display = "none";
+  }
+}
+
+// A function to scroll back to the top of the page
+function goToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 /*function toggleMobileNav() {
