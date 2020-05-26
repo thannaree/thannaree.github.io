@@ -32,7 +32,7 @@ window.onscroll = function() {
 
 // A function to display the "goToTopButton" when a user scroll down more than 20px
 function displayGoToTopButton() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     goToTopButton.style.display = "block";
   }
   else {
