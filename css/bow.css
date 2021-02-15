@@ -8,8 +8,8 @@
 * {
     /*font-family: "Georgia", sans-serif;*/
     font-family: 'Libre Baskerville', serif;
-    box-sizing: border-box;
-    margin: 0;
+    /* box-sizing: border-box; */
+    /* margin: 0; */
     padding: 0;
 }
 
@@ -19,7 +19,10 @@
 }
 
 footer {
-  height: 13%;
+  /* height: 13% !important; */
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100%;
 }
 
 a {
@@ -46,6 +49,65 @@ a {
     display: none;
 }
 
+.page-container {
+  position: relative;
+  min-height: 100%;
+}
+
+.content-wrap {
+  padding-bottom: 13% !important;
+}
+
+.padding-top {
+  padding-top: 16px;
+}
+
+.logo-icon {
+    width: 30px;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("phuketBoat.jpg");
+
+  /* Set a specific height */
+  margin-top: 16px;
+  height: 40%;
+  width: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+/* Place text in the middle of the image */
+.hero-text   {
+  font-family: 'Arizonia' !important;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.photo-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 aut
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
 #mobile-nav {
   z-index: 3;
   width: 100%;
@@ -67,7 +129,7 @@ a {
 
 hr {
   border: 0;
-  border-top: 1px solid indigo;
+  border-top: 1px solid violet;
   margin: 8px;
 }
 
@@ -270,12 +332,12 @@ hr {
     text-align: center;
 }
 
-.aside-text {
-    /*vertical-align: middle;*/
-    /*border: 5px solid red;*/
-    /*box-shadow: inset 5px 0 5px -5px #424242;*/
-    /*box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);*/
-}
+/* .aside-text {
+    vertical-align: middle;
+    border: 5px solid red;
+    box-shadow: inset 5px 0 5px -5px #424242;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+} */
 
 .img-profile {
     width: 20%;

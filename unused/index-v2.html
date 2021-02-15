@@ -1,0 +1,185 @@
+<!-- An HTML (index.html) file for a landing page on my website -->
+<!-- Author: Thannaree Charoenpokkasap -->
+<!-- Website: bow.meys.tel, thannaree.github.io -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="author" content="Thannaree Charoenpokkasap">
+    <meta name="keywords" content="Bow, Meystel, web design, photography, Thannaree, Charoenpokkasap">
+    <meta name="description" content="Bow Meystel's Personal Website">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap">
+    <link rel="stylesheet" href="css/w3-v413.css">
+    <link rel="stylesheet" href="css/bow.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="icon" href="image/animoji.png" type="image/gif" sizes="24x24">
+
+    <title>MaMa BoW - Welcome</title>
+
+  </head>
+
+  <body>
+    <div class="page-container">
+      <div class="content-wrapper">
+
+        <!-- After clicking the hamburger menu, the menu page opens with the "X" icon on the right hand side -->
+        <nav class="bc-sidebar bc-dark-grey bc-padding-16 bc-collapse bc-hide-large"
+          onclick="closeMobileNav()" id="mobile-nav">
+          <a href="javascript:void(0)" onclick="closeMobileNav()" class="bc-button bc-hide-large bc-display-topright">
+            <i class="fas fa-times close-icon bc-large"></i>
+          </a>
+
+          <!-- Inside the hamburger menu - only display on a small screen -->
+          <div class="bc-bar-block padding-mobile-nav">
+            <a href="#about" onclick="closeMobileNav()" class="bc-bar-item bc-button bc-large bc-padding-16">About</a>
+            <hr>
+            <a href="photo_showcase.html" onclick="closeMobileNav()" class="bc-bar-item bc-button bc-large bc-padding-16">Photography</a>
+            <hr>
+            <a href="#travel" onclick="closeMobileNav()" class="bc-bar-item bc-button bc-large bc-padding-16">Travel</a>
+            <hr>
+            <a href="#contact" onclick="closeMobileNav()" class="bc-bar-item bc-button bc-large bc-padding-16">Contact</a>
+          </div>
+        </nav>
+
+        <!-- The menu bar on top of the page -->
+        <header class="bc-bar-block bc-dark-grey bc-card-2 bc-top bc-padding-16">
+          <a href="#" class="bc-padding bc-medium" title="Home">
+            <img src="image/animoji.png" class="logo-icon">
+            <!-- <i class="fas fa-home home-icon bc-large"></i> -->
+          </a>
+
+          <!-- The logo and "MaMa Bow" text that links to the the home page -->
+          <div class="bc-wide bc-horizontal-align-center">
+            <a href="#" class="bc-padding bc-medium" title="Home">MaMa BoW</a>
+          </div>
+
+          <!-- The hamburger menu on the right hand side of the menu bar -->
+          <a href="javascript:void(0)" onclick="openMobileNav()" title="Close"
+            class="bc-button bc-hide-large bc-display-topright">
+            <i class="fas fa-bars hamburger-icon bc-xlarge" id="hamburger-menu"></i>
+          </a>
+        </header>
+
+        <div class="bc-overlay bc-hide-large" onclick="closeMobileNav()" title="close mobile nav" id="overlay"></div>
+
+          <!-- 1. JavaScript to close the mobile menu when a menu is clicked
+               2. Javascript to open the mobile menu when the hamburger bar is clicked
+               3. a <nav> to display the menu bar and NOT display the hamburger bar when the screen is bigger than ...
+               4. a <div> to display the menu tab and DISPLAY the hamburger bar when the screen is smaller than ...
+          -->
+
+          <div class="banner" id="top">
+              <img class="img-banner" src="photos/bowWithCamera.JPG" alt="image banner, Bow with a camera">
+          </div>
+
+        <!-- Page content starts -->
+        <div class="wrapper padding-bottom-64">
+
+          <div class="bc-container" id="about">
+
+            <h3>About Me</h3>
+
+            <p class="bc-medium bc-high">Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+
+            <p class="bc-medium bc-high">Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+
+          </div>
+
+
+          <div class="bc-container" id="photography">
+
+            <h3>Photography</h3>
+
+            <p class="bc-medium bc-high">Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+
+            <p class="bc-medium bc-high">Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+
+          </div>
+
+          <!-- <div class="bc-container" id="travel">
+
+            <h3>Travel</h3>
+
+            <p class="bc-medium bc-high">Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+
+            <p class="bc-medium bc-high">Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+
+          </div> -->
+
+          <div class="bc-container" id="contact">
+
+            <h3>Contact Me</h3>
+
+            <p class="bc-medium bc-high">Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+
+            <p class="bc-medium bc-high">Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+                altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+
+          </div>
+
+          <div id="goToTop" onclick="goToTop()" title="Go To Top">
+            <i class="fas fa-arrow-circle-up top-icon bc-xlarge"></i>
+          </div>
+
+        </div>
+        <!-- End page content -->
+
+
+        <br>
+        <br>
+
+        <footer class="bc-indigo bc-padding-16 bc-center bc-high bc-bottom">
+          <p class="footer-icon">
+            <a href="https://facebook.com/bojunga/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com/in/thannaree/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/bmeystel/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/bowmeystel/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/thannaree/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:bobojunga@gmail.com?subject=Feedback"><i class="far fa-envelope"></i></a>
+          </p>
+
+          <p>
+            <i class="far fa-copyright"></i>
+              <script type="text/JavaScript">
+                  document.write(new Date().getFullYear());
+              </script>
+              Thannaree Charoenpokkasap. <br>All Rights Reserved.
+          </p>
+
+        </footer>
+      </div> <!-- Ending content-wrapper class div -->
+    </div> <!-- Ending page-container class div -->
+
+    <script src="bowSite.js"></script>
+
+  </body>
+
+</html>

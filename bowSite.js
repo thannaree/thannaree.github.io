@@ -24,7 +24,7 @@ function closeMobileNav() {
 function openMobileNav() {
     mobileNav.style.display = "block";
     overlay.style.display = "block";
-    goToTopButton.style.display = "none";
+    // goToTopButton.style.display = "none";
 }
 
 window.onscroll = function() {

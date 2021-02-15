@@ -1,0 +1,76 @@
+<!-- An HTML (index.html) file for a landing page on my website -->
+<!-- Author: Thannaree Charoenpokkasap -->
+<!-- Website: bow.meys.tel, thannaree.github.io -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="author" content="Thannaree Charoenpokkasap">
+    <meta name="keywords" content="Bow, Meystel, web design, photography, Thannaree, Charoenpokkasap">
+    <meta name="description" content="Bow Meystel's Personal Website">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap">
+    <link rel="stylesheet" href="css/bowstyle.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="icon" href="image/animoji.png" type="image/gif" sizes="24x24">
+
+    <title>MaMa BoW - Welcome</title>
+
+  </head>
+
+  <body>
+    <!-- A header bar that sits at the top of the page -->
+    <header class="bc-top bc-bar-block bc-light-black bc-card-2 bc-padding-tb16">
+      <!-- The animoji with a "MaMa BoW" text with link to home page -->
+      <a href="#" class="bc-padding-8by16 bc-fontsize-15 bc-wide link-noline" title="Home">
+        <img src="image/animoji.png" class="logo-icon"> MaMa BoW
+      </a>
+    
+      <!-- The hamburger menu on the right hand side of the menu bar -->
+      <a href="javascript:void(0)" onclick="openMobileNav()" title="Close"
+        class="bc-button bc-hide-large bc-display-topright">
+        <i class="fas fa-bars hamburger-icon bc-fontsize-24" id="hamburger-menu"></i>
+      </a>
+    </header>
+
+    <!-- After clicking the hamburger menu, the menu page opens with the "X" icon on the right hand side -->
+    <nav class="bc-sidebar bc-light-black bc-padding-tb16 bc-collapse bc-hide-large" 
+    onclick="closeMobileNav()" id="mobile-nav">
+      <a href="javascript:void(0)" onclick="closeMobileNav()" 
+      class="bc-button bc-hide-large bc-display-topright">
+        <i class="fas fa-times close-icon bc-fontsize-24"></i>
+      </a>
+    
+      <!-- Inside the hamburger menu (sidebar) - only display on a small screen -->
+      <section class="bc-bar-block bc-padding-tb24 bc-padding-lr12">
+        <a href="#about" onclick="closeMobileNav()" 
+        class="bc-bar-item bc-button bc-fontsize-18 bc-padding-tb16">About</a>
+        <hr>
+        <a href="photo_showcase.html" onclick="closeMobileNav()"
+          class="bc-bar-item bc-button bc-fontsize-18 bc-padding-tb16">Photography</a>
+        <hr>
+        <a href="#travel" onclick="closeMobileNav()" 
+        class="bc-bar-item bc-button bc-fontsize-18 bc-padding-tb16">Travel</a>
+        <hr>
+        <a href="#contact" onclick="closeMobileNav()" 
+        class="bc-bar-item bc-button bc-fontsize-18 bc-padding-tb16">Contact</a>
+      </section>
+    </nav>
+
+    <!-- When touch anywhere else beside links and "X" icon, the sidebar is closed -->
+    <div class="bc-overlay bc-hide-large" onclick="closeMobileNav()" 
+    title="close mobile nav" id="overlay"></div>
+
+    <div class="homepage-bg-imager">
+      <!-- <img class="bc-image homepage-bg-image" src="photos/bowWithCamera.JPG" 
+          alt="homepage background image, Bow with a camera"> -->
+    </div>
+
+    <script src="bowSite.js"></script>
+
+  </body>
+
+</html>
