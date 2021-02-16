@@ -273,15 +273,6 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
 } */
 
-.homepage-bg-image {
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-image: url("bowWithCamera.JPG");
-}
-
 
 /* Links Style */
 
@@ -344,7 +335,7 @@ a {
 .bc-btn, .bc-button {
     border: none;
     display: inline-block;
-    padding: 14px;
+    padding: 12px;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none !important;
@@ -390,13 +381,27 @@ a {
   padding: 8px;
 }
 
+footer {
+    height: 7%;
+    padding: 5px;
+}
+
+.footer-icon i {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#hamburger-menu {
+    font-size: 23px !important;
+}
+
 .logo-icon {
     width: 30px;
 }
 
 /* Badges Styles */
 
-.bc-badge, .bc-tag {
+.bc-badge-inline, .bc-tag {
     background-color: #000;
     color: #fff;
     display: inline-block;
@@ -406,7 +411,16 @@ a {
 }
 
 .bc-badge {
+    display: block;
     border-radius: 50%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-top {
+    margin-top: 5em;
+
 }
 
 
@@ -920,7 +934,7 @@ a {
 
 .bc-bottom {
     bottom: 0;
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -1463,6 +1477,18 @@ a {
   padding-right: 48px !important;
 }
 
+.bc-padding-8 {
+  padding: 8px !important;
+}
+
+.bc-padding-12 {
+  padding: 12px !important;
+}
+
+.bc-padding-16 {
+  padding: 16px !important;
+}
+
 
 /* Float */
 .bc-left {
@@ -1571,7 +1597,7 @@ a {
 }
 
 .bc-deep-purple, .bc-hover-deep-purple:hover {
-    color: #fff !important;
+    color: #f3f3f3 !important;
     background-color: #673ab7 !important;
 }
 

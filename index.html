@@ -5,33 +5,39 @@
 <!DOCTYPE html>
 <html lang="eng">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="author" content="Thannaree Charoenpokkasap">
+    <meta name="keywords" content="Bow, Meystel, web design, photography, Thannaree, Charoenpokkasap">
+    <meta name="description" content="Bow Meystel's Personal Website">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap">
     <link rel="stylesheet" href="css/experiment.css">
     <link rel="stylesheet" href="css/bowstyle.css">
     <link rel="stylesheet" href="css/all.css">
 
     <link rel="icon" href="image/animoji.png" type="image/gif" sizes="24x24">
     
-    <title>MaMa BoW - Welcome</title>
+    <title>MaMa BoW</title>
   </head>
 
   <body>
 
     <!-- A header bar that sits at the top of the page -->
-    <header class="bc-top bc-bar-block bc-light-grey bc-card-2 bc-padding-tb16">
-      <!-- The animoji with a "MaMa BoW" text with link to home page -->
-      <a href="#" class="bc-padding-8by16 bc-fontsize-28 bc-wide link-noline bc-text-deep-purple" title="Home">
-        <img src="image/animoji.png" class="logo-icon bc-image"> Mama Bow
-      </a>
-    
-      <!-- The hamburger menu on the right hand side of the menu bar -->
-      <a href="javascript:void(0)" onclick="openMobileNav()" title="Menu"
-        class="bc-button bc-hide-large bc-display-topright bc-fontsize-24 bc-text-deep-purple">
-        <i class="fas fa-bars hamburger-icon bc-fontsize-24" id="hamburger-menu"></i>
-      </a>
+    <header class="bc-top">
+      <section class="bc-bar bc-light-grey bc-card-2">
+        <!-- The animoji with a "MaMa BoW" text with link to home page -->
+        <a href="#" class="bc-button bc-fontsize-24 bc-wide link-noline bc-text-deep-purple" title="Home">
+          <img src="image/animoji.png" class="logo-icon bc-image"> Mama Bow
+        </a>
+      
+        <!-- The hamburger menu on the right hand side of the menu bar -->
+        <a href="javascript:void(0)" onclick="openMobileNav()" title="Menu"
+          class="bc-button bc-hide-large bc-display-topright bc-fontsize-24 bc-text-deep-purple">
+          <i class="fas fa-bars hamburger-icon" id="hamburger-menu"></i>
+        </a>
+      </section>
     </header>
 
     <!-- After clicking the hamburger menu, the menu page opens with the "X" icon on the right hand side -->
@@ -43,7 +49,8 @@
     
       <!-- Inside the hamburger menu (sidebar) - only display on a small screen -->
       <section class="bc-bar-block bc-padding-tb24 bc-padding-lr12">
-        <b><a href="#about" onclick="closeMobileNav()" 
+        <br>
+        <b><a href="about.html" onclick="closeMobileNav()" 
           class="bc-bar-item bc-button bc-fontsize-24 bc-padding-tb12">About
         </a></b>
         <hr>
@@ -65,10 +72,29 @@
 
     <div class="hero-image">
       <div class="hero-text">
-        <h2>Am I just a woman with a camera ?</h2>
-        <!-- <button>Hire me</button> -->
+        <h2 class="bc-high">Am I just a woman with a camera ?</h2>
+        <br>
+        <a href="about.html" class="bc-wide link-noline" title="Home">
+          <button class="bc-deep-purple bc-button bc-padding-8">Find Out</button>
+        </a>
       </div>
     </div>
+
+    <footer class="bc-light-grey bc-center bc-text-deep-purple bc-bottom">
+      <section class="footer-icon">
+        <a href="https://linkedin.com/in/thannaree/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/thannaree/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:bobojunga@gmail.com?subject=Feedback"><i class="far fa-envelope"></i></a>
+        <br>
+        <i class="far fa-copyright"></i>
+        <script type="text/JavaScript">
+          document.write(new Date().getFullYear());
+        </script>
+        Thannaree Charoenpokkasap.
+        <br>
+        All Rights Reserved.
+      </section>
+    </footer>
 
     <script src="bowSite.js"></script>
 

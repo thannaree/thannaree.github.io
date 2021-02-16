@@ -27,25 +27,25 @@ function openMobileNav() {
     // goToTopButton.style.display = "none";
 }
 
-window.onscroll = function() {
-  displayGoToTopButton()
-};
+// window.onscroll = function() {
+//   displayGoToTopButton()
+// };
 
 // A function to display the "goToTopButton" when a user scroll down more than 20px
-function displayGoToTopButton() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    goToTopButton.style.display = "block";
-  }
-  else {
-    goToTopButton.style.display = "none";
-  }
-}
+// function displayGoToTopButton() {
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     goToTopButton.style.display = "block";
+//   }
+//   else {
+//     goToTopButton.style.display = "none";
+//   }
+// }
 
 // A function to scroll back to the top of the page
-function goToTop() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+// function goToTop() {
+//   document.body.scrollTop = 0; // For Safari
+//   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// }
 
 /*function toggleMobileNav() {
     if (theIcon.hasAttribute("class")) {
