@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     font-family: 'Merienda One', cursive !important;
+    background-color: #f3f3f3;
 }
 
 /* The hero image */
@@ -9,7 +10,8 @@ body, html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("../photos/bowWithCamera.JPG");
 
   /* Set a specific height */
-  height: 93%;
+  height: 100%;
+  /* margin: 0 12px 0 12px; */
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -22,8 +24,8 @@ body, html {
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 72%;
+  top: 70%;
   left: 55%;
-  transform: translate(-15%, -50%);
+  transform: translate(-10%, -55%);
   color: #f3f3f3;
 }

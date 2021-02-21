@@ -382,13 +382,14 @@ a {
 }
 
 footer {
-    height: 7%;
+    height: 8%;
     padding: 5px;
 }
 
 .footer-icon i {
     padding-left: 3px;
     padding-right: 3px;
+    font-size: 18px;
 }
 
 #hamburger-menu {
@@ -413,13 +414,13 @@ footer {
 .bc-badge {
     display: block;
     border-radius: 50%;
-    max-width: 70%;
+    max-width: 65%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .margin-top {
-    margin-top: 5em;
+    margin-top: 5.5em !important;
 
 }
 
@@ -1372,7 +1373,11 @@ footer {
     margin-bottom: 16px !important;
 }
 
-.bc-margin {
+.bc-margin-12 {
+    margin: 16px !important;
+}
+
+.bc-margin-16 {
     margin: 16px !important;
 }
 
