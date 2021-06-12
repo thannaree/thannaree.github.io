@@ -115,7 +115,8 @@ code, kbd, pre, samp {
 
 hr {
   border: 0;
-  border-top: 1px solid #673ab7;
+  /* border-top: 1px solid #673ab7; */
+  border-top: 1px solid #e2aa7c;
   margin: 8px 16px;
 }
 
@@ -250,6 +251,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 3px;
 }
 
+.bc-wider {
+    letter-spacing: 0.5rem;
+}
+
 .bc-high {
   line-height: 2;
 }
@@ -278,6 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: inherit;
+    text-decoration: none !important;
 }
 
 
@@ -335,7 +341,7 @@ a {
 .bc-btn, .bc-button {
     border: none;
     display: inline-block;
-    padding: 12px;
+    padding: 1.25rem 2rem;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none !important;
@@ -377,8 +383,9 @@ a {
 
 /* Icons Styles */
 
-.close-icon, .hamburger-icon, .home-icon {
-  padding: 8px;
+.close-icon {
+  padding: 4px;
+  font-size: 1.7rem;
 }
 
 footer {
@@ -393,11 +400,11 @@ footer {
 }
 
 #hamburger-menu {
-    font-size: 23px !important;
+    font-size: 2rem !important;
 }
 
 .logo-icon {
-    width: 30px;
+    width: 3.25rem;
 }
 
 /* Badges Styles */
@@ -850,6 +857,26 @@ footer {
     }
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .bc-hide-xs {
+        display: none !important;
+    }
+    .brand {
+        font-size: 1.5rem;
+        padding-left: 1.6rem;
+    }
+    .header-section {
+        padding: 0;
+        background-color: #f3f3f3;
+    }
+    .header-purple-xs {
+        color: #673bb7 !important;
+    }
+    .bc-button {
+        padding: 1.2rem 1.6rem;
+    }
+}
+
 @media (max-width: 600px) {
     .bc-modal-content {
         margin: 0 10px;
@@ -895,14 +922,34 @@ footer {
     .bc-hide-large {
         display: none !important;
     }
-    .bc-sidebar.bc-collapse {
-        display: block !important;
+    .hero-text-lg {
+        top: 50%;
+        left: 80%;
+        transform: translate(-40%, -45%);
     }
+    .font-large {
+        font-size: 3rem;
+    }
+
+    /* .bc-sidebar.bc-collapse {
+        display: block !important;
+    } */
 }
 
 @media (max-width: 992px) and (min-width: 601px) {
     .bc-hide-medium {
-        display: none !important;
+        display: none !important;            
+    }
+    .hero-text-medium {
+        top: 45%;
+        left: 80%;
+        transform: translate(-50%, -35%);
+    }
+    .close-icon, .bc-button {
+        padding: 0.8rem !important;
+    }
+    .font-medium {
+        font-size: 2.5rem;
     }
 }
 
@@ -910,7 +957,7 @@ footer {
     .bc-sidebar.bc-collapse {
         background-color: #191919;
         /* background-color: white !important; */
-        color: white;
+        color: #f3f3f3;
         display: none;
     }
     .bc-main {
@@ -1278,16 +1325,20 @@ footer {
     font-size: 12px !important;
 }
 
-.bc-fontsize-15 {
-    font-size: 15px !important;
+.bc-fontsize-1rem {
+    font-size: 1rem !important;
 }
 
-.bc-fontsize-18 {
-    font-size: 18px !important;
+.bc-fontsize-1p25 {
+    font-size: 1.25rem !important;
 }
 
-.bc-fontsize-24 {
-    font-size: 24px !important;
+.bc-fontsize-1p5 {
+    font-size: 1.5rem !important;
+}
+
+.bc-fontsize-1p7 {
+    font-size: 1.7rem !important;
 }
 
 .bc-fontsize-28 {
@@ -1507,8 +1558,8 @@ footer {
 
 /* Hover */
 .bc-button:hover {
-    color: #000 !important;
-    /* background-color: #ccc !important; */
+    color: #673bb7;
+    /* background-color: #673bb7 !important; */
 }
 
 .bc-transparent, .bc-hover-none:hover {
@@ -1603,7 +1654,7 @@ footer {
 
 .bc-deep-purple, .bc-hover-deep-purple:hover {
     color: #f3f3f3 !important;
-    background-color: #673ab7 !important;
+    background-color: #673bb7 !important;
 }
 
 .bc-red, .bc-hover-red:hover {
@@ -1735,6 +1786,10 @@ footer {
     color: #ff5722 !important;
 }
 
+.bc-text-deep-purple, .bc-hover-text-deep-purple.bc-button {
+    color: #673bb7 !important;
+}
+
 .bc-text-pink, .bc-hover-text-pink:hover {
     color: #e91e63 !important;
 }
@@ -1743,8 +1798,9 @@ footer {
     color: #9c27b0 !important;
 }
 
-.bc-text-deep-purple, .bc-hover-text-deep-purple:hover {
-    color: #673ab7 !important;
+.bc-text-off-white, .bc-hover-text-off-white:hover {
+    /* color: #673ab7 !important; */
+    color: #f3f3f3;
 }
 
 .bc-text-red, .bc-hover-text-red:hover {

@@ -7,11 +7,12 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("../photos/bowWithCamera.JPG");
+  background-image: url("../photos/bowWithCamera.JPG");
+  filter: brightness(0.38);
 
   /* Set a specific height */
   height: 100%;
-  /* margin: 0 12px 0 12px; */
+  /* margin-top: 1rem; */
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -22,10 +23,213 @@ body, html {
 
 /* Place text in the middle of the image */
 .hero-text {
+  width: 20rem;
   text-align: center;
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 55%;
-  transform: translate(-10%, -55%);
-  color: #f3f3f3;
+  transform: translate(-10%, -60%);
+  color: #ffffff;
+}
+
+.header-section {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem 1.7rem
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.yellow-button {
+  /* border: 2px solid #673ab7 !important; */
+  border: 1px solid #e2aa7c !important;
+  /* border: 1px solid #6f89df !important; */
+  /* filter: brightness(100%); */
+}
+
+.yellow-button-hover:hover {
+  /* border: 2px solid #673ab7 !important; */
+  /* border: 1px solid #cc986e !important; */
+  /* color: #6f89df !important; */
+  color: #e2aa7c !important;
+  /* filter: brightness(100%); */
+}
+
+.brand {
+  font-size: 1.7rem;
+  padding: 8px 16px;
+}
+
+.item-padding {
+  padding: 0.9rem 1rem !important;
+}
+
+/* ######################### */
+/* FONTS */
+/* ######################### */
+.merienda {
+  font-family: 'Merienda', cursive !important;
+}
+
+.merienda-one {
+  font-family: 'Merienda One', cursive !important;
+}
+
+.merriweather {
+  font-family: 'Merriweather', serif !important;
+}
+
+.merriweather-sans {
+  font-family: 'Merriweather Sans', sans-serif !important;
+}
+
+.noto-sans {
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
+.noto-serif {
+  font-family: 'Noto Serif', serif !important;
+}
+
+.nunito {
+  font-family: 'Nunito', sans-serif !important;
+}
+
+.nunito-sans {
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.questrial {
+  font-family: 'Questrial', sans-serif !important;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.roboto-mono {
+  font-family: 'Roboto Mono', monospace !important;
+}
+
+.roboto-slab {
+  font-family: 'Roboto Slab', serif !important;
+}
+
+
+.photo {
+  /* height: 250px; */
+  /* border: 1px solid lightgray;  */
+  /* filter: brightness(0.7); */
+  /* border-radius: 50px; */
+}
+
+/* .photo:hover {
+  filter: none;
+} */
+
+body {
+	height: 100vh;
+	/* display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center; */
+	/* background: #E0E0E0; */
+	overflow: auto;
+}
+
+.media-container {
+  width: 100%;
+	display: flex;
+  flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+  align-content: space-around;
+}
+
+.media-container > * {
+	margin: 15px;
+}
+
+div.gallery {
+	width: 350px;
+  height: 250px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  /* text-align: center; */
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gallery img {
+	max-width: 100%;
+	height: auto;
+  /* text-align: center; */
+  /* padding: 15px; */
+  /* border-radius: 8px; */
+}
+
+.inner-text {
+	opacity: 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10px;
+	height: 78%;
+	background: #FFF;
+	color: #151E3F;
+	transition: all 0.4s ease;
+}
+
+.inner-text span {
+  font-family: 'Inconsolata', monospace;
+	text-align: center;
+	font-size: 2.75rem;
+  font-weight: 700;
+	letter-spacing: 2px;
+	transition: all 0.3s ease;
+	transform: scale(0.1);
+}
+
+.gallery:hover .inner-text {
+  /* filter: brightness(0.6); */
+	opacity: 0.8;
+	width: 85%;
+	/* transition: all 0.4s ease; */
+}
+
+.gallery:hover .inner-text span {
+	transform: scale(1);
+	/* transition: all 0.5s ease; */
+}
+
+@media (max-width: 800px) {
+	body {
+		/* transform: scale(0.6); */
+	}
+}
+
+@media (max-width: 600px) {
+	.media-container {
+		display: block;
+	}
+
+	.media-container > * {
+		margin: 10px;
+	}
 }

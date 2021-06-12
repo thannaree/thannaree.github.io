@@ -12,12 +12,13 @@
     <meta name="description" content="Bow Meystel's Personal Website">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Merienda:wght@400;700&family=Merriweather+Sans:wght@300;400&family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&family=Nunito:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600;700;800&family=Questrial&family=Raleway:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"> -->
     <link rel="stylesheet" href="css/experiment.css">
     <link rel="stylesheet" href="css/bowstyle.css">
     <link rel="stylesheet" href="css/all.css">
 
-    <link rel="icon" href="image/animoji.png" type="image/gif" sizes="24x24">
+    <link rel="icon" href="image/white-purple.png" type="image/png" sizes="32x32">
     
     <title>MaMa BoW</title>
   </head>
@@ -26,44 +27,67 @@
 
     <!-- A header bar that sits at the top of the page -->
     <header class="bc-top">
-      <section class="bc-bar bc-light-grey bc-card-2">
+      <section class="bc-bar header-section">
         <!-- The animoji with a "MaMa BoW" text with link to home page -->
-        <a href="#" class="bc-button bc-fontsize-24 bc-wide link-noline bc-text-deep-purple" title="Home">
-          <img src="image/animoji.png" class="logo-icon bc-image"> Mama Bow
-        </a>
+        <div class="" style="flex: 1;">
+          <a href="#" class="brand bc-wide link-noline header-purple-xs bc-text-off-white" title="Home">
+            <!-- <img src="image/animoji.png" class="logo-icon bc-image"> -->
+            <span class="bc-cell-middle">Mama</span>
+            <img src="image/white-purple.png" class="logo-icon bc-image bc-cell-middle">
+            <span class="bc-cell-middle bc-wider">ow</span>
+          </a>
+        </div>
       
         <!-- The hamburger menu on the right hand side of the menu bar -->
         <a href="javascript:void(0)" onclick="openMobileNav()" title="Menu"
-          class="bc-button bc-hide-large bc-display-topright bc-fontsize-24 bc-text-deep-purple">
-          <i class="fas fa-bars hamburger-icon" id="hamburger-menu"></i>
+          class="bc-button yellow-button-hover bc-hide-large header-purple-xs bc-text-off-white" style="float: right;">
+          <i class="fas fa-bars" id="hamburger-menu"></i>
         </a>
+
+        <div class="bc-hide-small bc-hide-medium bc-text-off-white bc-right bc-fontsize-1" style="flex: 1;">
+          <ul class="bc-right roboto" style="letter-spacing: 2px;">
+            <li class="bc-bar-item bc-button yellow-button-hover">
+              <a class="" href="#">ABOUT</a>
+            </li>
+            <li class="bc-bar-item bc-button yellow-button-hover">
+              <a class="" href="#">PHOTOGRAPHY</a>
+            </li>
+            <li class="bc-bar-item bc-button yellow-button-hover">
+              <a class="" href="#">TRAVEL</a>
+            </li>
+            <li class="bc-bar-item bc-button yellow-button-hover">
+              <a class="" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </header>
 
     <!-- After clicking the hamburger menu, the menu page opens with the "X" icon on the right hand side -->
-    <nav class="bc-sidebar bc-light-black bc-padding-tb16 bc-collapse bc-hide-large" onclick="closeMobileNav()"
+    <nav class="bc-sidebar bc-collapse bc-light-black bc-padding-tb16 bc-hide-large" onclick="closeMobileNav()"
       id="mobile-nav">
-      <a href="javascript:void(0)" onclick="closeMobileNav()" class="bc-button bc-hide-large bc-display-topright">
-        <i class="fas fa-times close-icon bc-fontsize-24"></i>
+      <a href="javascript:void(0)" onclick="closeMobileNav()" 
+        class="bc-button yellow-button-hover bc-display-topright">
+        <i class="fas fa-times close-icon"></i>
       </a>
     
       <!-- Inside the hamburger menu (sidebar) - only display on a small screen -->
-      <section class="bc-bar-block bc-padding-tb24 bc-padding-lr12">
+      <section class="bc-bar-block roboto bc-wide bc-fontsize-1p5 bc-padding-tb24 bc-padding-lr12">
         <br>
         <b><a href="about.html" onclick="closeMobileNav()" 
-          class="bc-bar-item bc-button bc-fontsize-24 bc-padding-tb12">About
+          class="bc-bar-item bc-button yellow-button-hover bc-padding-tb12">About
         </a></b>
         <hr>
         <b><a href="photo_showcase.html" onclick="closeMobileNav()"
-          class="bc-bar-item bc-button bc-fontsize-24 bc-padding-tb12">Photography
+          class="bc-bar-item bc-button yellow-button-hover bc-padding-tb12">Photography
         </a></b>
         <hr>
         <b><a href="#travel" onclick="closeMobileNav()" 
-          class="bc-bar-item bc-button bc-fontsize-24 bc-padding-tb12">Travel
+          class="bc-bar-item bc-button yellow-button-hover bc-padding-tb12">Travel
         </a></b>
         <hr>
         <b><a href="#contact" onclick="closeMobileNav()"
-          class="bc-bar-item bc-button bc-fontsize-24 bc-padding-tb12">Contact
+          class="bc-bar-item bc-button yellow-button-hover bc-padding-tb12">Contact
         </a></b>
       </section>
     </nav>
@@ -71,16 +95,17 @@
     <div class="bc-overlay bc-hide-large" onclick="closeMobileNav()" title="close mobile nav" id="overlay"></div>
 
     <div class="hero-image">
-      <div class="hero-text">
-        <h2 class="bc-high">Am I just a woman with a camera ?</h2>
-        <br>
-        <a href="about.html" class="bc-wide link-noline" title="Home">
-          <button class="bc-deep-purple bc-button bc-padding-12 bc-fontsize-24">Find Out</button>
-        </a>
-      </div>
+      
+    </div>
+    <div class="hero-text hero-text-lg hero-text-medium bc-text-off-white">
+      <h2 class="bc-high font-large font-medium merienda">Am I just<br>a woman<br>with<br>a camera ?</h2>
+      <br>
+      <a href="about.html" class="bc-wide link-noline" title="Home">
+        <button class="yellow-button yellow-button-hover bc-button bc-fontsize-1p5">Find Out</button>
+      </a>
     </div>
 
-    <footer class="bc-light-grey bc-center bc-text-deep-purple bc-bottom bc-fontsize-12">
+    <!-- <footer class="bc-light-grey bc-center bc-text-off-white bc-bottom bc-fontsize-12">
       <section class="footer-icon bc-padding-8">
         <a href="https://linkedin.com/in/thannaree/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/thannaree/" target="_blank"><i class="fab fa-github"></i></a>
@@ -91,10 +116,9 @@
           document.write(new Date().getFullYear());
         </script>
         Mama Bow.
-        <!-- <br> -->
         All Rights Reserved.
       </section>
-    </footer>
+    </footer> -->
 
     <script src="bowSite.js"></script>
 
