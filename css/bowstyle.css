@@ -865,13 +865,6 @@ footer {
         font-size: 1.5rem;
         padding-left: 1.6rem;
     }
-    .header-section {
-        padding: 0;
-        background-color: #f3f3f3;
-    }
-    .header-purple-xs {
-        color: #673bb7 !important;
-    }
     .bc-button {
         padding: 1.2rem 1.6rem;
     }
@@ -913,6 +906,13 @@ footer {
     .bc-modal {
         padding-top: 50px;
     }
+    .header-section {
+        padding: 0;
+        background-color: #f3f3f3;
+    }
+    .header-purple-xs {
+        color: #673bb7 !important;
+    }
 }
 
 @media (min-width: 993px) {
@@ -922,10 +922,11 @@ footer {
     .bc-hide-large {
         display: none !important;
     }
-    .hero-text-lg {
+    .hero-text {
+        width: 20rem;
         top: 50%;
         left: 80%;
-        transform: translate(-40%, -45%);
+        transform: translate(-40%, -20%);
     }
     .font-large {
         font-size: 3rem;
@@ -936,14 +937,21 @@ footer {
     } */
 }
 
-@media (max-width: 992px) and (min-width: 601px) {
+@media (min-width: 601px) and (max-width: 992px) {
     .bc-hide-medium {
         display: none !important;            
     }
-    .hero-text-medium {
+    .header-section {
+        background-color: #f3f3f3;
+    }
+    .header-purple-xs {
+        color: #673bb7 !important;
+    }
+    .hero-text {
+        width: 20rem;
         top: 45%;
-        left: 80%;
-        transform: translate(-50%, -35%);
+        left: 70%;
+        transform: translate(-20%, -10%);
     }
     .close-icon, .bc-button {
         padding: 0.8rem !important;

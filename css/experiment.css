@@ -23,12 +23,12 @@ body, html {
 
 /* Place text in the middle of the image */
 .hero-text {
-  width: 20rem;
+  /* width: 20rem; */
   text-align: center;
   position: absolute;
   top: 60%;
   left: 55%;
-  transform: translate(-10%, -60%);
+  transform: translate(-10%, -50%);
   color: #ffffff;
 }
 
@@ -128,26 +128,16 @@ ul {
 }
 
 
-.photo {
-  /* height: 250px; */
-  /* border: 1px solid lightgray;  */
-  /* filter: brightness(0.7); */
-  /* border-radius: 50px; */
-}
+/* .photo {
+  height: 250px;
+  border: 1px solid lightgray; 
+  filter: brightness(0.7);
+  border-radius: 50px;
+} */
 
 /* .photo:hover {
   filter: none;
 } */
-
-body {
-	height: 100vh;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: start;
-	align-items: center; */
-	/* background: #E0E0E0; */
-	overflow: auto;
-}
 
 .media-container {
   width: 100%;
@@ -219,9 +209,9 @@ div.gallery {
 }
 
 @media (max-width: 800px) {
-	body {
-		/* transform: scale(0.6); */
-	}
+	/* body {
+		transform: scale(0.6);
+	} */
 }
 
 @media (max-width: 600px) {
