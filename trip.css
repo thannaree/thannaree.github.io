@@ -1,0 +1,38 @@
+.main-padding {
+    padding: 1rem 3rem;
+    font-weight: bolder;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+    color: #673bb7 !important;
+    font-weight: bolder;
+}
+
+.photo {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 1rem 2rem 5px 2rem; */
+}
+
+.calendar {
+    display: flex;
+    justify-content: center;
+
+}
+
+.dates {
+    padding: 5px 10px;
+    margin: 0 5px;
+    text-align: center;
+    color: rgb(58, 64, 70);
+    background-color: rgb(236, 232, 232);
+    border: 2px solid #b77ed8;
+}
+
+.padding-top-8 {
+    padding-top: 8px;
+}
