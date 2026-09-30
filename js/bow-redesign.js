@@ -1,0 +1,1 @@
+const menu=document.querySelector(".menu-toggle"),nav=document.querySelector(".site-nav");if(menu){menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",open)})}document.querySelector("#year").textContent=new Date().getFullYear();
